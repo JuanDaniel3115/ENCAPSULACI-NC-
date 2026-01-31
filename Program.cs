@@ -74,16 +74,18 @@ using ENCAPSULACIÓN;
 
 //# Ejercicio 3
 // Reserva 1 - Flujo correcto
-Reservation reservation1 = new Reservation(1, 1000);
-reservation1.Create(DateTime.UtcNow.AddDays(1), DateTime.UtcNow.AddDays(5), 500);
-reservation1.Confirm();
-reservation1.Complete(500);
-Console.WriteLine($"Reserva {reservation1.Id}: Saldo a Pagar = {reservation1.TotalAmount}, Estado = {reservation1.Status}");
-// Reserva 2 - Esto Cancela la reserva
-Reservation reservation2 = new Reservation(2, 800);
-reservation2.Create(DateTime.UtcNow.AddDays(2), DateTime.UtcNow.AddDays(6), 300);
-reservation2.Confirm();
-reservation2.Cancel();
-Console.WriteLine($"Reserva {reservation2.Id}: Saldo a Pagar = {reservation2.TotalAmount}, Estado = {reservation2.Status}");
+//Reservation reservation1 = new Reservation(1, 1000);
+//reservation1.Create(DateTime.UtcNow.AddDays(1), DateTime.UtcNow.AddDays(5), 500);
+//reservation1.Confirm();
+//reservation1.Complete(500);
+//Console.WriteLine($"Reserva {reservation1.Id}: Saldo a Pagar = {reservation1.TotalAmount}, Estado = {reservation1.Status}");
+//// Reserva 2 - Esto Cancela la reserva
+//Reservation reservation2 = new Reservation(2, 800);
+//reservation2.Create(DateTime.UtcNow.AddDays(2), DateTime.UtcNow.AddDays(6), 300);
+//reservation2.Confirm();
+//reservation2.Cancel();
+//Console.WriteLine($"Reserva {reservation2.Id}: Saldo a Pagar = {reservation2.TotalAmount}, Estado = {reservation2.Status}");
+
+
 Console.WriteLine("Presiona cualquier tecla para salir...");
 Console.ReadKey();
